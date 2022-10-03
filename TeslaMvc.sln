@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Domain", "Tesla.Domain\Tesla.Domain.csproj", "{9243E58D-A128-425C-8264-940E78B16064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Domain", "Tesla.Domain\Tesla.Domain.csproj", "{9243E58D-A128-425C-8264-940E78B16064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Infra.Ioc", "Tesla.Infra.Ioc\Tesla.Infra.Ioc.csproj", "{6152F101-4A02-4A73-9FF6-527B31BB724E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Infra.Ioc", "Tesla.Infra.Ioc\Tesla.Infra.Ioc.csproj", "{6152F101-4A02-4A73-9FF6-527B31BB724E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Repo", "Tesla.Repo\Tesla.Repo.csproj", "{8872EBFD-F83C-458F-A1CD-15C014D34D5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Repo", "Tesla.Repo\Tesla.Repo.csproj", "{8872EBFD-F83C-458F-A1CD-15C014D34D5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Api", "Tesla.Api\Tesla.Api.csproj", "{523F7A94-3F9A-4C62-9289-85D5F4DD468B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Domain.Test", "Tesla.Domain.Test\Tesla.Domain.Test.csproj", "{0AA5DD3D-3AA2-4FF6-9EE5-D0E3D0FB0E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{8872EBFD-F83C-458F-A1CD-15C014D34D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8872EBFD-F83C-458F-A1CD-15C014D34D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8872EBFD-F83C-458F-A1CD-15C014D34D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523F7A94-3F9A-4C62-9289-85D5F4DD468B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523F7A94-3F9A-4C62-9289-85D5F4DD468B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523F7A94-3F9A-4C62-9289-85D5F4DD468B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523F7A94-3F9A-4C62-9289-85D5F4DD468B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA5DD3D-3AA2-4FF6-9EE5-D0E3D0FB0E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA5DD3D-3AA2-4FF6-9EE5-D0E3D0FB0E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA5DD3D-3AA2-4FF6-9EE5-D0E3D0FB0E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA5DD3D-3AA2-4FF6-9EE5-D0E3D0FB0E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
