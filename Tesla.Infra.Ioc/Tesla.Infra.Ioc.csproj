@@ -11,6 +11,8 @@
 
   <ItemGroup>
     
+    <ProjectReference Include="..\Tesla.Application\Tesla.Application.csproj" />
+    
     <ProjectReference Include="..\Tesla.Repo\Tesla.Repo.csproj" />
   </ItemGroup>
 

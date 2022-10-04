@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Tesla.Domain.Entidade;
 
@@ -18,6 +19,7 @@ namespace Tesla.Application.DTOs
         public string ImagemUrl { get; set; }
         public string ImagemThumbaiUrl { get; set; }
 
+        [JsonIgnore]
         public Categoria Categoria { get; set; }
 
         public int CategoriaId { get; set; }

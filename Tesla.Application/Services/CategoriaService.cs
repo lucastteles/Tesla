@@ -8,7 +8,7 @@ using Tesla.Domain.Interfaces;
 
 namespace Tesla.Application.Services
 {
-    public class CategoriaService : ICategoriaServices
+    public class CategoriaService : ICategoriaService
     {
         private ICategoriaRepository _categoriarepository;
         private readonly IMapper _mapper;

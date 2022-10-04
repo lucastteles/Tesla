@@ -4,7 +4,7 @@ using Tesla.Application.DTOs;
 
 namespace Tesla.Application.Interfaces
 {
-    public interface ICategoriaServices
+    public interface ICategoriaService
     {
         Task<IEnumerable<CategoriaDTO>> ObterCategorias();
         Task<CategoriaDTO> ObterPorId(int? id);
