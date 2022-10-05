@@ -13,7 +13,7 @@ namespace Tesla.Application.Services
 {
     public class ProdutoService : IProdutoService
     {
-        private IProdutoRepository _produtoRepository;
+        //private IProdutoRepository _produtoRepository; // Usar IMediator
         private readonly IMapper _mapper;
 
         public ProdutoService(IProdutoRepository produtoRepository, IMapper mapper)
