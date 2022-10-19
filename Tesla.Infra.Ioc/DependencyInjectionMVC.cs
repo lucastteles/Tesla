@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -28,7 +29,11 @@ namespace Tesla.Infra.Ioc
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IProdutoService, ProdutoService>();
             services.AddScoped<ICategoriaService, CategoriaService>();
+
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            var myhandlers = AppDomain.CurrentDomain.Load("Tesla.Application");
+            services.AddMediatR(myhandlers);
 
             return services;
         }

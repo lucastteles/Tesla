@@ -2,15 +2,11 @@
 using MediatR;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Tesla.Application.DTOs;
 using Tesla.Application.Interfaces;
 using Tesla.Application.Produtos.Commands;
 using Tesla.Application.Produtos.Queries;
-using Tesla.Domain.Entidade;
-using Tesla.Domain.Interfaces;
 
 namespace Tesla.Application.Services
 {
@@ -29,7 +25,7 @@ namespace Tesla.Application.Services
         {
             var produtosQuery = new GetProdutosQuery();
 
-            if(produtosQuery == null)
+            if (produtosQuery == null)
                 throw new Exception($"Entity could not be loaded.");
             var result = await _mediator.Send(produtosQuery);
 
@@ -40,7 +36,7 @@ namespace Tesla.Application.Services
         {
             var produtosByIdQuery = new GetProdutoByIdQuery(id.Value);
 
-            if(produtosByIdQuery == null)
+            if (produtosByIdQuery == null)
                 throw new Exception($"Entity could not be loaded.");
             var result = await _mediator.Send(produtosByIdQuery);
 
@@ -48,7 +44,7 @@ namespace Tesla.Application.Services
         }
 
         public async Task AdicionarProduto(ProdutoDTO produtoDTO)
-        {
+        {//Criar classe DTOToCommandMappingProfile
             var produtoCreateCommand = _mapper.Map<ProdutoCreateCommand>(produtoDTO);
             await _mediator.Send(produtoCreateCommand);
         }
@@ -62,7 +58,7 @@ namespace Tesla.Application.Services
         public async Task Remover(int? id)
         {
             var produtoRemoveCommand = new ProdutoRemoveCommand(id.Value);
-            if( produtoRemoveCommand == null)
+            if (produtoRemoveCommand == null)
                 throw new Exception($"Entity could not loaded.");
 
             await _mediator.Send(produtoRemoveCommand);
